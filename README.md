@@ -6,7 +6,9 @@ Get this repo:
 Run the install script:  
 `./install.sh`
 
-**The first installation process could take some time because of docker image download**
+:information_source: [Docker composer](https://docs.docker.com/compose/) ([Fig](http://www.fig.sh/)) is comming
+
+:warning: **The first installation process could take some time because of docker image download**
 
 Or respect the following instructions
 
