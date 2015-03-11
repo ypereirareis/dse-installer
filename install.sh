@@ -14,3 +14,10 @@ cd ../
 rm -rf dse-front
 git clone git@github.com:ypereirareis/dse-front.git && cd dse-front
 docker run -p 3020:8080 -v $(pwd):/app --link=dse-server:dse-server -d ypereirareis/dse-front bash -c 'cd dist/ && python -m SimpleHTTPServer 8080'
+
+
+echo ""
+echo "---"
+echo "Go to http://127.0.0.1:3020 (use boot2docker ip if needed)"
+echo "---"
+echo ""
