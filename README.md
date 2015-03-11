@@ -1,8 +1,14 @@
 # dse-installer
 
-I recommand you to create a **database-schema-explorer** directory.  
-We will clone and install application into it:  
-`mkdir database-schema-explorer && cd database-schema-explorer`
+Get this repo:  
+`git@github.com:ypereirareis/dse-installer.git && cd dse-installer`
+
+Run the install script:  
+`./install.sh`
+
+**The first installation process could take some time because of docker image download**
+
+Or respect the following instructions
 
 ## Backend Installation
 
@@ -23,7 +29,7 @@ We will clone and install application into it:
 
 ## Frontend Installation
 
-* Come back into the **database-schema-explorer** directory:  
+* Come back into previous directory:  
 `cd ..`
 
 * Get the repo:  
