@@ -1,4 +1,4 @@
-# dse-installer
+# Installer - Database Schema Explorer
 
 Get this repo:  
 `git@github.com:ypereirareis/dse-installer.git && cd dse-installer`
@@ -27,7 +27,12 @@ Or respect the following instructions
 `docker run --name dse-server --link=dse-mysql:mysql -p 3010:3000 -v $(pwd):/app -d ypereirareis/dse-microservices bash -c 'npm install --production && node server.js'``
 
 * Check everything is ok:  
-[http://127.0.0.1:3010](http://127.0.0.1:3010) (On OSX use `boot2docker ip` to get the ip address:
+[http://127.0.0.1:3010](http://127.0.0.1:3010)
+
+**On OSX (2 possibilities):**
+
+* Run `boot2docker ip` to get ip address
+* Execute [boot2docker_forwarding.sh](/boot2docker_forwarding.sh) `./boot2docker_forwarding.sh` to forward ports.
 
 ## Frontend Installation
 
@@ -41,8 +46,12 @@ Or respect the following instructions
 `docker run -p 3020:8080 -v $(pwd):/app --link=dse-server:dse-server -d  ypereirareis/dse-front bash -c 'cd dist/ && python -m SimpleHTTPServer 8080'`
 
 * Access your frontend dashboard:  
-[http://127.0.0.1:3020](http://127.0.0.1:3020) (On OSX use `boot2docker ip` to get the ip address:
+[http://127.0.0.1:3020](http://127.0.0.1:3020)
 
+**On OSX (2 possibilities):**
+
+* Run `boot2docker ip` to get ip address
+* Execute [boot2docker_forwarding.sh](/boot2docker_forwarding.sh) `./boot2docker_forwarding.sh` to forward ports.
 
 ## Snippets
 
