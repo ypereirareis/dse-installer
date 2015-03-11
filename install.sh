@@ -1,5 +1,5 @@
-docker ps -aq | xargs docker stop
-docker ps -aq | xargs docker rm
+# docker ps -aq | xargs docker stop
+# docker ps -aq | xargs docker rm
 
 ### Backend install
 rm -rf dse-microservices
