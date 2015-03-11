@@ -17,7 +17,7 @@
 
 ## dse-front
 
-* `docker run -p 3020:3000 -v $(pwd):/app --link=dse-server:dse-server -d ypereirareis/dse-front gulp serve`
+* `docker run -p 3020:8080 -v $(pwd):/app --link=dse-server:dse-server -d  ypereirareis/dse-front bash -c 'cd dist/ && python -m SimpleHTTPServer 8080'`
 
 **http://IP:3020**
 
