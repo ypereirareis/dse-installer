@@ -12,7 +12,7 @@ cd ../
 ### Frontend install
 rm -rf dse-front
 git clone git@github.com:ypereirareis/dse-front.git && cd dse-front
-docker run -p 3020:8080 -v $(pwd):/app --link=dse-server:dse-server -d ypereirareis/dse-front
+docker run -p 3020:8080 -v $(pwd):/app -d ypereirareis/dse-front
 
 echo ""
 echo "---"
