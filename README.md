@@ -43,7 +43,7 @@ Or respect the following instructions
 `git clone git@github.com:ypereirareis/dse-front.git && cd dse-front`
 
 * Then run the Frontend application container:  
-`docker run -p 3020:8080 -v $(pwd):/app --link=dse-server:dse-server -d ypereirareis/dse-front`
+`docker run -p 3020:8080 -v $(pwd):/app -d ypereirareis/dse-front`
 
 * Access your frontend dashboard:  
 [http://127.0.0.1:3020](http://127.0.0.1:3020)
