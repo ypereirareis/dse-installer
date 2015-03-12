@@ -24,7 +24,7 @@ Or respect the following instructions
 `docker run --name dse-mysql -e MYSQL_ROOT_PASSWORD=trololo -d mysql`
 
 * Then run the Backend application container:  
-`docker run --name dse-server --link=dse-mysql:mysql -p 3010:3000 -v $(pwd):/app -d ypereirareis/dse-microservices bash -c 'npm install --production && node server.js'``
+`docker run --name dse-server --link=dse-mysql:mysql -p 3010:3000 -v $(pwd):/app -d ypereirareis/dse-microservices`
 
 * Check everything is ok:  
 [http://127.0.0.1:3010](http://127.0.0.1:3010)
